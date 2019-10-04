@@ -1,0 +1,17 @@
+To Setup Librealsense and RealsenseROS library on Nvidia Jetson Nano follow below steps:
+
+1. install LibRealsense:
+   https://github.com/JetsonHacksNano/installLibrealsense
+
+   follow the steps provided in link
+
+2. Install Realsense Realsense ROS
+   https://github.com/JetsonHacks/installRealSenseCameraROS
+
+   edit: change the script installRealsense.sh at line number 14 for melodic version of ROS for installation
+
+
+3. While building the package(for ROS modules i.e: Navigation, depthimage_to_laser,etc) make changes in CMAKELIST.TXT to compile with 2.21 version.
+
+
+4. on terminal catkin_make
